@@ -5,9 +5,34 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\player_idle</sprite>
+    <sprite>sprites\sp_wall</sprite>
+    <sprite>sprites\sp_obj</sprite>
+    <sprite>sprites\player_running</sprite>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\player_move_state.gml</script>
+    <script>scripts\player_attack_one_state.gml</script>
+    <script>scripts\get_input.gml</script>
+    <script>scripts\move.gml</script>
+    <script>scripts\create_static_objects.gml</script>
+    <script>scripts\apply_friction.gml</script>
+  </scripts>
+  <objects name="objects">
+    <object>objects\Player</object>
+    <object>objects\Wall</object>
+    <object>objects\P_SolidObject</object>
+    <object>objects\P_StaticObject</object>
+    <object>objects\P_LifeformObject</object>
+    <object>objects\System</object>
+    <object>objects\Input</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\room1</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
