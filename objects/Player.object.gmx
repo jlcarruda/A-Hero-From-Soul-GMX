@@ -32,7 +32,7 @@ maxspd = 7;
 spd = 1; 
 jump = -10;
 grav = 2;
-state = player_move_state;
+state = player_initial_state;
 </string>
           </argument>
         </arguments>

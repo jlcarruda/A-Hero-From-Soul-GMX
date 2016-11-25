@@ -31,6 +31,8 @@
 keyboard_input = true;
 gamepad_input = !keyboard_input;
 
+// Defaults
+camera_spd = .15;
 
 </string>
           </argument>

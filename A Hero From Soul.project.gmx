@@ -10,11 +10,12 @@
     <sprite>sprites\sp_wall</sprite>
     <sprite>sprites\sp_obj</sprite>
     <sprite>sprites\player_running</sprite>
+    <sprite>sprites\player_attack_one</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\player_move_state.gml</script>
+    <script>scripts\player_initial_state.gml</script>
     <script>scripts\player_attack_one_state.gml</script>
     <script>scripts\get_input.gml</script>
     <script>scripts\move.gml</script>
