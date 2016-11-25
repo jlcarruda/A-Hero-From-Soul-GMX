@@ -23,6 +23,11 @@ if(!Input.right && !Input.left){
     sprite_index = player_idle;
 }
 
+if(Input.attack){
+    image_index = 0;
+    state = player_attack_one_state;
+}
+
 // Gravity
 if(!place_meeting(x, y+1, P_SolidObject)){
     vspd += grav;
