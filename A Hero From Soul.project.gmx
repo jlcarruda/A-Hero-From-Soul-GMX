@@ -20,6 +20,10 @@
     <script>scripts\move.gml</script>
     <script>scripts\create_static_objects.gml</script>
     <script>scripts\apply_friction.gml</script>
+    <scripts name="Camera Scripts">
+      <script>scripts\camera_move_to_target.gml</script>
+      <script>scripts\camera_follow_player_state.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\Player</object>
@@ -29,9 +33,11 @@
     <object>objects\P_LifeformObject</object>
     <object>objects\System</object>
     <object>objects\Input</object>
+    <object>objects\PlayerStats</object>
+    <object>objects\Camera</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room1</room>
+    <room>rooms\test</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

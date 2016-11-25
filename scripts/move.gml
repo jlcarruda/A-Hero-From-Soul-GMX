@@ -1,8 +1,8 @@
 ///move()
 
 // Horizontal Collision
-if(position_meeting(x+hspd, y, P_SolidObject)){
-    while(!position_meeting(x + sign(hspd), y, P_SolidObject)){
+if(place_meeting(x+hspd, y, P_SolidObject)){
+    while(!place_meeting(x + sign(hspd), y, P_SolidObject)){
         x+=sign(hspd);
     }
     hspd=0;
@@ -10,8 +10,8 @@ if(position_meeting(x+hspd, y, P_SolidObject)){
 x+=hspd;
 
 //Vertical Collision
-if(position_meeting(x, y+vspd, P_SolidObject)){
-    while(!position_meeting(x, y + sign(vspd), P_SolidObject)){
+if(place_meeting(x, y+vspd, P_SolidObject)){
+    while(!place_meeting(x, y + sign(vspd), P_SolidObject)){
         y+=sign(vspd);
     }
     vspd=0;
