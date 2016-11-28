@@ -15,15 +15,21 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\player_initial_state.gml</script>
-    <script>scripts\player_attack_one_state.gml</script>
-    <script>scripts\get_input.gml</script>
-    <script>scripts\move.gml</script>
-    <script>scripts\create_static_objects.gml</script>
-    <script>scripts\apply_friction.gml</script>
+    <scripts name="Player States">
+      <script>scripts\player_attack_one_state.gml</script>
+      <script>scripts\player_initial_state.gml</script>
+    </scripts>
     <scripts name="Camera Scripts">
       <script>scripts\camera_move_to_target.gml</script>
       <script>scripts\camera_follow_player_state.gml</script>
+    </scripts>
+    <script>scripts\get_input.gml</script>
+    <script>scripts\move.gml</script>
+    <script>scripts\create_static_objects.gml</script>
+    <scripts name="Physics">
+      <script>scripts\apply_friction.gml</script>
+      <script>scripts\apply_gravity.gml</script>
+      <script>scripts\check_apply_gravity.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
