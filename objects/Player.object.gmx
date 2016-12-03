@@ -26,12 +26,13 @@
           <argument>
             <kind>1</kind>
             <string>/// Initialize Player
-hspd = 0;
+initialize_moving_objects();
+/*hspd = 0;
 vspd = 0;
 maxspd = 7;
 spd = 1; 
 jump = -15;
-grav = 1.3;
+grav = 1.3;*/
 state = player_initial_state;
 </string>
           </argument>

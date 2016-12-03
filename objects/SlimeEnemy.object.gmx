@@ -28,12 +28,48 @@
             <string>hp = 10;
 expr = 100;
 attack = 5;
+attack_range = 1;
 
-ai_enemy_initialize(40);
+// Initilize moving object variables
+initialize_moving_objects();
+spd = 1;
+maxspd = 7;
+
+ai_enemy_initialize(100, true);
 _state = ai_state.IDLE;
 
+aggro_state_sighted_behavior = charger_melee;
+aggro_state_behavior = roam;
+idle_state_sighted_behavior = be_aggro;
+idle_state_behavior = roam;
 
 
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Turn on the AI
+apply_friction(spd*2);
+apply_ai();
 </string>
           </argument>
         </arguments>

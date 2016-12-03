@@ -33,10 +33,28 @@
     <scripts name="Artificial Inteligence">
       <script>scripts\ai_enemy_initialize.gml</script>
       <script>scripts\apply_ai.gml</script>
+      <script>scripts\update_sight_direction.gml</script>
+      <script>scripts\ai_move.gml</script>
+      <scripts name="Behaviors">
+        <scripts name="Aggro">
+          <script>scripts\charger_melee.gml</script>
+        </scripts>
+        <scripts name="Idle">
+          <script>scripts\roam.gml</script>
+          <script>scripts\be_aggro.gml</script>
+        </scripts>
+      </scripts>
+    </scripts>
+    <scripts name="Util">
+      <script>scripts\move_to.gml</script>
+      <script>scripts\target_in_range.gml</script>
+      <script>scripts\move_to_object.gml</script>
+      <script>scripts\initialize_moving_objects.gml</script>
     </scripts>
     <script>scripts\get_input.gml</script>
     <script>scripts\move.gml</script>
     <script>scripts\create_static_objects.gml</script>
+    <script>scripts\start_game_script.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\Player</object>
