@@ -30,20 +30,15 @@ expr = 100;
 attack = 5;
 attack_range = 1;
 
-// Initilize moving object variables
 initialize_moving_objects();
 spd = 1;
-maxspd = 7;
+maxspd = 5;
 
 ai_enemy_initialize(100, true);
-_state = ai_state.IDLE;
 
-aggro_state_sighted_behavior = charger_melee;
-aggro_state_behavior = roam;
-idle_state_sighted_behavior = be_aggro;
-idle_state_behavior = roam;
-
-
+idle_state = do_nothing;
+attack_state = do_nothing;
+follow_state = charger_melee;
 
 </string>
           </argument>
@@ -68,7 +63,6 @@ idle_state_behavior = roam;
           <argument>
             <kind>1</kind>
             <string>/// Turn on the AI
-apply_friction(spd*2);
 apply_ai();
 </string>
           </argument>

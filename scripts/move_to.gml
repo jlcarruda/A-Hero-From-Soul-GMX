@@ -5,18 +5,15 @@ var targetY = argument1;
 // TODO: Move object towards the location
 if(targetX > x){
     //Will see if spd is bellow the maxspd, and if it will not fall into enything
-    if(hspd < maxspd && place_meeting(x+(hspd + spd), y+1, P_SolidObject)){
+    if(hspd < maxspd){
         hspd += spd;
     } else {
-        hspd = 0;
+        hspd -= spd;
     }
 }else{
-    if(hspd > -maxspd && place_meeting(x+(hspd - spd), y+1, P_SolidObject)){
+    if(hspd > -maxspd){
         hspd -= spd;    
     }else {
-        hspd = 0;
+        hspd += spd;
     }   
 }
-apply_gravity();
-
-ai_move();

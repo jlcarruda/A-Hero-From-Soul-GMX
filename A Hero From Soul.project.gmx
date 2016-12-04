@@ -29,20 +29,23 @@
       <script>scripts\apply_friction.gml</script>
       <script>scripts\apply_gravity.gml</script>
       <script>scripts\check_apply_gravity.gml</script>
+      <script>scripts\ai_apply_friction.gml</script>
     </scripts>
     <scripts name="Artificial Inteligence">
+      <script>scripts\ai_step_default.gml</script>
+      <script>scripts\ai_move.gml</script>
       <script>scripts\ai_enemy_initialize.gml</script>
       <script>scripts\apply_ai.gml</script>
+      <script>scripts\update_ai_state.gml</script>
       <script>scripts\update_sight_direction.gml</script>
-      <script>scripts\ai_move.gml</script>
       <scripts name="Behaviors">
         <scripts name="Aggro">
           <script>scripts\charger_melee.gml</script>
         </scripts>
         <scripts name="Idle">
           <script>scripts\roam.gml</script>
-          <script>scripts\be_aggro.gml</script>
         </scripts>
+        <script>scripts\do_nothing.gml</script>
       </scripts>
     </scripts>
     <scripts name="Util">
@@ -60,6 +63,7 @@
     <object>objects\Player</object>
     <object>objects\Wall</object>
     <object>objects\P_SolidObject</object>
+    <object>objects\P_MapSolidObject</object>
     <object>objects\P_StaticObject</object>
     <object>objects\P_LifeformObject</object>
     <object>objects\System</object>

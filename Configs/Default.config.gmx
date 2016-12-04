@@ -650,5 +650,10 @@
     <option_xbone_texture_page>1024</option_xbone_texture_page>
     <option_xbone_title_id></option_xbone_title_id>
   </Options>
-  <ConfigConstants/>
+  <ConfigConstants>
+    <constants number="2">
+      <constant name="c_AI_STATE_AGGRO">102831029381209382</constant>
+      <constant name="c_AI_STATE_IDLE">938509138941093123</constant>
+    </constants>
+  </ConfigConstants>
 </Config>
