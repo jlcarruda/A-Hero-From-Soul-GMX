@@ -67,6 +67,7 @@
     <instance objName="SlimeEnemy" x="342" y="360" name="inst_1A9873C6" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Wall" x="504" y="384" name="inst_1C654F13" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="P_MapSolidObject" x="186" y="34" name="inst_56656032" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="GameSystem" x="42" y="19" name="inst_042A6637" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

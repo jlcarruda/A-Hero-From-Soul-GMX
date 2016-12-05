@@ -53,6 +53,14 @@
       <script>scripts\target_in_range.gml</script>
       <script>scripts\move_to_object.gml</script>
       <script>scripts\initialize_moving_objects.gml</script>
+      <scripts name="Dispatcher Scripts">
+        <script>scripts\drawevent_dispatcher_add.gml</script>
+        <script>scripts\drawevent_dispatcher_remove.gml</script>
+        <script>scripts\main_dispatcher.gml</script>
+      </scripts>
+      <scripts name="Draw Scripts">
+        <script>scripts\dp_draw_text.gml</script>
+      </scripts>
     </scripts>
     <script>scripts\get_input.gml</script>
     <script>scripts\move.gml</script>
@@ -66,6 +74,7 @@
     <object>objects\P_MapSolidObject</object>
     <object>objects\P_StaticObject</object>
     <object>objects\P_LifeformObject</object>
+    <object>objects\GameSystem</object>
     <object>objects\System</object>
     <object>objects\Input</object>
     <object>objects\PlayerStats</object>
