@@ -1,12 +1,16 @@
 /// player_move_state()
 
+if(PlayerStats.hp <= 0){
+    game_restart();
+}
+
 if(vspd == 0){
     if(Input.right){
         if(hspd < maxspd){
             hspd += spd;
         }
         image_xscale = 1;
-        sprite_index = player_running;
+        sprite_index = player_alt_running;
         image_speed = hspd/maxspd*.3;
     }
     
@@ -15,13 +19,13 @@ if(vspd == 0){
             hspd -= spd;
         }
         image_xscale = -1;
-        sprite_index = player_running;
+        sprite_index = player_alt_running;
         image_speed = - (hspd/maxspd*.3);
     }
     
     if(!Input.right && !Input.left){
         image_speed = spd/maxspd;
-        sprite_index = player_idle;
+        sprite_index = player_alt_idle;
     }
     
     if(Input.attack){

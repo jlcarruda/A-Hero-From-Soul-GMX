@@ -6,15 +6,30 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\player_idle</sprite>
-    <sprite>sprites\sp_wall</sprite>
+    <sprites name="Player">
+      <sprite>sprites\player_idle</sprite>
+      <sprite>sprites\player_running</sprite>
+      <sprite>sprites\player_attack_one</sprite>
+      <sprite>sprites\hitbox_attack_one</sprite>
+    </sprites>
+    <sprites name="UI">
+      <sprite>sprites\player_health_bar_border</sprite>
+      <sprite>sprites\player_health_bar</sprite>
+    </sprites>
+    <sprites name="Player Alt">
+      <sprite>sprites\player_alt_idle</sprite>
+      <sprite>sprites\player_alt_running</sprite>
+      <sprite>sprites\player_alt_attack_one</sprite>
+      <sprite>sprites\hitbox_alt_attack_one</sprite>
+    </sprites>
     <sprite>sprites\sp_obj</sprite>
-    <sprite>sprites\player_running</sprite>
-    <sprite>sprites\player_attack_one</sprite>
+    <sprite>sprites\sp_wall</sprite>
     <sprite>sprites\enemy</sprite>
     <sprite>sprites\interactible</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\background0</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="Player States">
@@ -42,6 +57,7 @@
       <scripts name="Behaviors">
         <scripts name="Aggro">
           <script>scripts\charger_melee.gml</script>
+          <script>scripts\ai_attack.gml</script>
         </scripts>
         <scripts name="Idle">
           <script>scripts\roam.gml</script>
@@ -66,6 +82,7 @@
           <script>scripts\drawevent_dispatcher_cleanargs.gml</script>
           <script>scripts\drawevent_dispatcher_cleanscripts.gml</script>
           <script>scripts\dp_draw_text.gml</script>
+          <script>scripts\dp_draw_sprite_ext.gml</script>
         </scripts>
       </scripts>
     </scripts>
@@ -82,6 +99,7 @@
     <object>objects\P_MapSolidObject</object>
     <object>objects\P_StaticObject</object>
     <object>objects\P_LifeformObject</object>
+    <object>objects\P_EnemyObj</object>
     <object>objects\GameSystem</object>
     <object>objects\System</object>
     <object>objects\Input</object>
@@ -89,6 +107,7 @@
     <object>objects\Camera</object>
     <object>objects\SlimeEnemy</object>
     <object>objects\InteractibleObj</object>
+    <object>objects\PlayerAttackHitbox</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\test_1</room>
