@@ -35,6 +35,7 @@
       <script>scripts\ai_step_default.gml</script>
       <script>scripts\ai_move.gml</script>
       <script>scripts\ai_enemy_initialize.gml</script>
+      <script>scripts\ai_target_in_sight.gml</script>
       <script>scripts\apply_ai.gml</script>
       <script>scripts\update_ai_state.gml</script>
       <script>scripts\update_sight_direction.gml</script>
@@ -50,22 +51,29 @@
     </scripts>
     <scripts name="Util">
       <script>scripts\move_to.gml</script>
+      <script>scripts\move_right.gml</script>
       <script>scripts\target_in_range.gml</script>
+      <script>scripts\is_in_range.gml</script>
       <script>scripts\move_to_object.gml</script>
       <script>scripts\initialize_moving_objects.gml</script>
       <scripts name="Dispatcher Scripts">
-        <script>scripts\drawevent_dispatcher_add.gml</script>
-        <script>scripts\drawevent_dispatcher_remove.gml</script>
+        <script>scripts\drawevent_dispatcher_clear.gml</script>
         <script>scripts\main_dispatcher.gml</script>
-      </scripts>
-      <scripts name="Draw Scripts">
-        <script>scripts\dp_draw_text.gml</script>
+        <scripts name="Draw Scripts">
+          <script>scripts\drawevent_dispatcher_add.gml</script>
+          <script>scripts\drawevent_dispatcher_remove.gml</script>
+          <script>scripts\drawevent_dispatcher_cleankeys.gml</script>
+          <script>scripts\drawevent_dispatcher_cleanargs.gml</script>
+          <script>scripts\drawevent_dispatcher_cleanscripts.gml</script>
+          <script>scripts\dp_draw_text.gml</script>
+        </scripts>
       </scripts>
     </scripts>
     <script>scripts\get_input.gml</script>
     <script>scripts\move.gml</script>
     <script>scripts\create_static_objects.gml</script>
     <script>scripts\start_game_script.gml</script>
+    <script>scripts\move_left.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\Player</object>

@@ -1,12 +1,12 @@
 ///main_dispatcher()
 
+var dp_draw_script_size = ds_map_size(global.DrawEvent_dispatcher_keys);
+
 switch(event_type){
     case(ev_draw):
-        var dp_draw_keys_size = ds_list_size(global.DrawEvent_dispatcher_keys);
         
-        if dp_draw_keys_size > 0 {
-            show_debug_message("Entered Draw Dispatcher event");
-            for(var i = 0; i < dp_draw_keys_size; i++){
+        if dp_draw_script_size > 0 {
+            for(var i = 0; i < dp_draw_script_size; i++){
                 var key = ds_list_find_value(global.DrawEvent_dispatcher_keys, i);
                 
                 if(!is_undefined(key)){ // If Key isn't undefined
@@ -26,4 +26,9 @@ switch(event_type){
             }
         }
         break;
+}
+
+// If the DrawEvent dispatcher has no scripts, then clear the dispatcher entirely
+if(dp_draw_script_size == 0){
+    drawevent_dispatcher_clear();
 }

@@ -51,12 +51,11 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="Player" x="56" y="245" name="inst_40A4165B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Wall" x="160" y="288" name="inst_8FAC5DDB" locked="0" code="" scaleX="10" scaleY="0.349999994039536" colour="4294967295" rotation="0"/>
-    <instance objName="Wall" x="335" y="278" name="inst_BB3B7201" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Wall" x="656" y="277" name="inst_D3AF5189" locked="0" code="" scaleX="15" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Wall" x="355" y="405" name="inst_A1C290C1" locked="0" code="" scaleX="10" scaleY="0.349999994039536" colour="4294967295" rotation="0"/>
-    <instance objName="Wall" x="178" y="468" name="inst_4C32F929" locked="0" code="" scaleX="10" scaleY="0.349999994039536" colour="4294967295" rotation="0"/>
+    <instance objName="Player" x="135" y="626" name="inst_40A4165B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Wall" x="208" y="518" name="inst_8FAC5DDB" locked="0" code="" scaleX="10" scaleY="0.349999994039536" colour="4294967295" rotation="0"/>
+    <instance objName="Wall" x="507" y="715" name="inst_D3AF5189" locked="0" code="" scaleX="33.060001373291" scaleY="0.870967745780945" colour="4294967295" rotation="0"/>
+    <instance objName="Wall" x="505" y="625" name="inst_A1C290C1" locked="0" code="" scaleX="10" scaleY="0.349999994039536" colour="4294967295" rotation="0"/>
+    <instance objName="Wall" x="24" y="393" name="inst_4C32F929" locked="0" code="" scaleX="1.3125" scaleY="20.8799991607666" colour="4294967295" rotation="0"/>
     <instance objName="P_SolidObject" x="82" y="20" name="inst_552C9B27" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="P_StaticObject" x="113" y="26" name="inst_683A2DC8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="P_LifeformObject" x="155" y="28" name="inst_DF599147" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -64,10 +63,10 @@
     <instance objName="Input" x="260" y="47" name="inst_F0971030" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Camera" x="301" y="39" name="inst_E774D36C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Camera" x="388" y="47" name="inst_1047265D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="SlimeEnemy" x="342" y="360" name="inst_1A9873C6" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="Wall" x="504" y="384" name="inst_1C654F13" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="SlimeEnemy" x="764" y="631" name="inst_1A9873C6" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="P_MapSolidObject" x="186" y="34" name="inst_56656032" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="GameSystem" x="42" y="19" name="inst_042A6637" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Wall" x="1000" y="382" name="inst_07D1E301" locked="0" code="" scaleX="1.3125" scaleY="20.8799991607666" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

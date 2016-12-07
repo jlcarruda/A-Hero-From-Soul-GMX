@@ -28,13 +28,13 @@
             <string>hp = 10;
 expr = 100;
 attack = 5;
-attack_range = 10;
+attack_range = 25;
 
 initialize_moving_objects();
 spd = 1;
 maxspd = 3;
 
-ai_enemy_initialize(100, true);
+ai_enemy_initialize(200, true);
 
 idle_state = do_nothing;
 attack_state = do_nothing;
