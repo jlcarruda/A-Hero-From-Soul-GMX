@@ -72,7 +72,12 @@ state = player_initial_state;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string> /// Execute State
+            <string>
+if(PlayerStats.hp &lt;= 0){
+    game_restart();
+}
+ 
+/// Execute State
 script_execute(state);
 
 // Add friction

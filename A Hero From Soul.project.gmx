@@ -21,20 +21,30 @@
       <sprite>sprites\player_alt_running</sprite>
       <sprite>sprites\player_alt_attack_one</sprite>
       <sprite>sprites\hitbox_alt_attack_one</sprite>
+      <sprite>sprites\player_alt_onair</sprite>
     </sprites>
     <sprite>sprites\sp_obj</sprite>
     <sprite>sprites\sp_wall</sprite>
     <sprite>sprites\enemy</sprite>
     <sprite>sprites\interactible</sprite>
+    <sprites name="Map">
+      <sprite>sprites\outside_castle_wall_vertical_left</sprite>
+      <sprite>sprites\outside_castle_floor</sprite>
+      <sprite>sprites\outside_castle_wall_vertical_right</sprite>
+      <sprite>sprites\outside_castle_wall_fill</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
+    <background>background\tile_set_1</background>
+    <background>background\background2</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="Player States">
       <script>scripts\player_attack_one_state.gml</script>
       <script>scripts\player_initial_state.gml</script>
+      <script>scripts\player_jump_state.gml</script>
     </scripts>
     <scripts name="Camera Scripts">
       <script>scripts\camera_move_to_target.gml</script>
@@ -93,8 +103,21 @@
     <script>scripts\move_left.gml</script>
   </scripts>
   <objects name="objects">
-    <object>objects\Player</object>
-    <object>objects\Wall</object>
+    <objects name="Map Objects">
+      <objects name="Castle">
+        <object>objects\castle_horizontal_wall</object>
+        <object>objects\castle_vertical_wall_right</object>
+        <object>objects\castle_wall_fill</object>
+      </objects>
+      <object>objects\Wall</object>
+      <object>objects\InteractibleObj</object>
+    </objects>
+    <objects name="Player">
+      <object>objects\Player</object>
+      <object>objects\Camera</object>
+      <object>objects\PlayerAttackHitbox</object>
+      <object>objects\PlayerStats</object>
+    </objects>
     <object>objects\P_SolidObject</object>
     <object>objects\P_MapSolidObject</object>
     <object>objects\P_StaticObject</object>
@@ -103,11 +126,7 @@
     <object>objects\GameSystem</object>
     <object>objects\System</object>
     <object>objects\Input</object>
-    <object>objects\PlayerStats</object>
-    <object>objects\Camera</object>
     <object>objects\SlimeEnemy</object>
-    <object>objects\InteractibleObj</object>
-    <object>objects\PlayerAttackHitbox</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\test_1</room>
